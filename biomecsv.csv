@@ -1,0 +1,223 @@
+Biome[1] ,Mod[2] ,Page #[3] ,IC2-N[4] ,IC2-H[5] ,Temp. ,Humid. ,Climate[6] ,Tags 
+Ocean,MC,276,0,10,50.00%,50.00%,Normal / Normal,OCEAN 
+Plains,MC,136,0,0,80.00%,40.00%,Normal / Normal,PLAINS 
+Desert,MC,178,0,0,200.00%,0.00%,Hot / Arid,HOT DRY SANDY 
+Extreme Hills,MC,84,0,5,20.00%,30.00%,Cold / Normal,MOUNTAIN HILLS 
+Forest,MC,12,5,6,70.00%,80.00%,Normal / Normal,FOREST 
+Taiga,MC,13,5,7,25.00%,80.00%,Cold / Normal,COLD CONIFEROUS FOREST 
+Swampland,MC,222,10,10,80.00%,90.00%,Normal / Damp,WET SWAMP 
+River,MC,257,2,9,50.00%,50.00%,Normal / Normal,RIVER 
+Hell,MC,n/a,0,0,200.00%,0.00%,Hellish / Arid,HOT DRY NETHER 
+Sky,MC,n/a,0,0,50.00%,50.00%,Normal / Normal,COLD DRY END 
+FrozenOcean,MC,201,0,10,0.00%,50.00%,Icy / Normal,COLD OCEAN SNOWY 
+FrozenRiver,MC,202,2,9,0.00%,50.00%,Icy / Normal,COLD RIVER SNOWY 
+Ice Plains,MC,203,0,0,0.00%,50.00%,Icy / Normal,COLD SNOWY WASTELAND 
+Ice Mountains,MC,123,0,5,0.00%,50.00%,Icy / Normal,COLD MOUNTAIN SNOWY 
+MushroomIsland,MC,n/a,5,8,90.00%,100.00%,Warm / Damp,MUSHROOM 
+MushroomIslandShore,MC,2,5,8,90.00%,100.00%,Warm / Damp,MUSHROOM BEACH 
+Beach,MC,1,0,6,80.00%,40.00%,Normal / Normal,BEACH 
+DesertHills,MC,86,0,4,200.00%,0.00%,Hot / Arid,HOT DRY HILLS SANDY 
+ForestHills,MC,15,5,6,70.00%,80.00%,Normal / Normal,FOREST HILLS 
+TaigaHills,MC,14,5,7,25.00%,80.00%,Cold / Normal,COLD CONIFEROUS FOREST HILLS 
+Extreme Hills Edge,MC,124,0,5,20.00%,30.00%,Cold / Normal,MOUNTAIN 
+Jungle,MC,n/a,10,10,95.00%,90.00%,Warm / Damp,HOT DENSE WET JUNGLE 
+JungleHills,MC,87,10,10,95.00%,90.00%,Warm / Damp,HOT DENSE WET JUNGLE HILLS 
+JungleEdge,MC,16,10,10,95.00%,80.00%,Warm / Normal,HOT WET JUNGLE FOREST 
+Deep Ocean,MC,278,0,10,50.00%,50.00%,Normal / Normal,OCEAN 
+Stone Beach,MC,3,0,6,20.00%,30.00%,Cold / Normal,BEACH 
+Cold Beach,MC,4,0,6,5.00%,30.00%,Icy / Normal,COLD SNOWY BEACH 
+Birch Forest,MC,17,5,6,60.00%,60.00%,Normal / Normal,FOREST 
+Birch Forest Hills,MC,18,5,6,60.00%,60.00%,Normal / Normal,FOREST HILLS 
+Roofed Forest,MC,19,5,7,70.00%,80.00%,Normal / Normal,DENSE SPOOKY FOREST 
+Cold Taiga,MC,20,5,7,-50.00%,40.00%,Icy / Normal,COLD CONIFEROUS FOREST SNOWY 
+Cold Taiga Hills,MC,21,5,7,-50.00%,40.00%,Icy / Normal,COLD CONIFEROUS FOREST HILLS SNOWY 
+Mega Taiga,MC,22,5,7,30.00%,80.00%,Cold / Normal,COLD CONIFEROUS FOREST 
+Mega Taiga Hills,MC,23,5,7,30.00%,80.00%,Cold / Normal,COLD CONIFEROUS FOREST HILLS 
+Extreme Hills+,MC,24,5,6,20.00%,30.00%,Cold / Normal,SPARSE FOREST MOUNTAIN 
+Savanna,MC,137,0,0,120.00%,0.00%,Hot / Arid,HOT SPARSE SAVANNA PLAINS 
+Savanna Plateau,MC,138,0,0,100.00%,0.00%,Hot / Arid,HOT SPARSE SAVANNA PLAINS 
+Mesa,MC,118,0,0,200.00%,0.00%,Hot / Arid,MESA SANDY 
+Mesa Plateau F,MC,119,0,0,200.00%,0.00%,Hot / Arid,SPARSE MESA SANDY 
+Mesa Plateau,MC,120,0,0,200.00%,0.00%,Hot / Arid,MESA SANDY 
+Alps Forest,BoP,26,5,6,0.00%,50.00%,Icy / Normal,COLD FOREST MOUNTAIN SNOWY 
+Alps,BoP,126,0,5,0.00%,50.00%,Icy / Normal,COLD MOUNTAIN SNOWY 
+Arctic,BoP,210,0,0,5.00%,50.00%,Icy / Normal,COLD DEAD SNOWY WASTELAND 
+Bamboo Forest,BoP,27,10,10,120.00%,90.00%,Hot / Damp,DENSE JUNGLE LUSH FOREST 
+Bayou,BoP,223,10,10,80.00%,90.00%,Normal / Damp,WET LUSH OCEAN RIVER SWAMP 
+Bog,BoP,28,10,10,50.00%,90.00%,Normal / Damp,WET DEAD FOREST SWAMP 
+Boreal Forest,BoP,29,5,7,50.00%,60.00%,Normal / Normal,DENSE CONIFEROUS LUSH FOREST 
+Brushland,BoP,139,0,0,120.00%,10.00%,Hot / Arid,HOT DRY SAVANNA PLAINS 
+Canyon,BoP,92,0,5,100.00%,30.00%,Hot / Normal,HOT SPARSE DRY MOUNTAIN HILLS SANDY 
+Canyon Ravine,BoP,93,0,4,100.00%,30.00%,Hot / Normal,HOT DRY HILLS SANDY 
+Chaparral,BoP,140,0,0,80.00%,60.00%,Normal / Normal,SPARSE PLAINS 
+Cherry Blossom Grove,BoP,30,5,7,60.00%,80.00%,Normal / Normal,LUSH MAGICAL FOREST 
+Coniferous Forest,BoP,31,5,7,50.00%,50.00%,Normal / Normal,DENSE CONIFEROUS FOREST HILLS 
+Coral Reef,BoP,264,2,10,50.00%,90.00%,Normal / Damp,OCEAN RIVER 
+Crag,BoP,129,0,7,100.00%,0.00%,Hot / Arid,DRY SPOOKY DEAD MOUNTAIN WASTELAND 
+Dead Forest,BoP,33,5,7,40.00%,30.00%,Normal / Normal,SPARSE SPOOKY DEAD FOREST 
+Dead Swamp,BoP,225,10,10,70.00%,90.00%,Normal / Damp,SPARSE SPOOKY DEAD SWAMP 
+Deciduous Forest,BoP,34,5,6,60.00%,80.00%,Normal / Normal,DENSE DRY FOREST 
+Dry River,BoP?,160,0,0,100.00%,0.00%,Hot / Arid,HOT DRY PLAINS SANDY 
+Eucalyptus Forest,BoP,161,0,10,90.00%,100.00%,Warm / Damp,HOT WET PLAINS 
+Fen,BoP,35,10,10,40.00%,40.00%,Normal / Normal,WET DEAD FOREST SWAMP 
+Flower Field,BoP,141,0,7,60.00%,70.00%,Normal / Normal,LUSH PLAINS 
+Frost Forest,BoP,36,5,6,0.00%,50.00%,Icy / Normal,COLD SPARSE FOREST SNOWY 
+Fungi Forest,BoP,37,10,10,90.00%,100.00%,Warm / Damp,WET LUSH MUSHROOM MAGICAL FOREST SWAMP 
+Garden,BoP,142,0,7,70.00%,80.00%,Normal / Normal,LUSH MAGICAL PLAINS 
+Glacier,BoP,96,0,4,0.00%,20.00%,Icy / Arid,COLD DEAD HILLS SNOWY 
+Grassland,BoP,97,10,10,60.00%,70.00%,Normal / Normal,SPARSE LUSH PLAINS HILLS SWAMP 
+Grove,BoP,38,0,7,70.00%,80.00%,Normal / Normal,DENSE LUSH FOREST PLAINS 
+Heathland,BoP,145,0,0,80.00%,20.00%,Normal / Arid,DRY SAVANNA PLAINS 
+Highland,BoP,98,0,5,50.00%,80.00%,Normal / Normal,SPARSE MOUNTAIN HILLS 
+Jade Cliffs,BoP,39,5,6,80.00%,90.00%,Normal / Damp,DENSE FOREST MOUNTAIN 
+Kelp Forest,BoP,46,5,10,50.00%,90.00%,Normal / Damp,OCEAN RIVER FOREST 
+Land of Lakes,BoP,162,0,10,50.00%,90.00%,Normal / Damp,WET PLAINS 
+Land of Lakes Marsh,BoP,239,10,10,50.00%,90.00%,Normal / Damp,WET SWAMP 
+Lavender Fields,BoP,146,0,7,60.00%,70.00%,Normal / Normal,SPARSE LUSH PLAINS 
+Lush Desert,BoP,188,0,7,110.00%,50.00%,Hot / Normal,HOT DRY SAVANNA LUSH SANDY 
+Lush River,BoP,163,2,9,70.00%,80.00%,Normal / Normal,RIVER PLAINS 
+Lush Swamp,BoP,229,10,10,70.00%,100.00%,Normal / Damp,WET LUSH OCEAN RIVER SWAMP 
+Mangrove,BoP,40,5,10,80.00%,90.00%,Normal / Damp,WET LUSH OCEAN RIVER FOREST 
+Maple Woods,BoP,41,5,6,20.00%,80.00%,Cold / Normal,COLD FOREST 
+Marsh,BoP,230,10,10,50.00%,90.00%,Normal / Damp,SPARSE WET LUSH OCEAN RIVER SWAMP 
+Meadow Forest,BoP,43,5,7,70.00%,70.00%,Normal / Normal,LUSH FOREST PLAINS 
+Meadow,BoP,42,5,7,70.00%,70.00%,Normal / Normal,LUSH FOREST PLAINS 
+Moor,BoP,99,10,10,50.00%,100.00%,Normal / Damp,SPARSE WET HILLS SWAMP 
+Mountain,BoP,44,5,6,50.00%,10.00%,Normal / Arid,DRY FOREST MOUNTAIN 
+Mystic Grove,BoP,45,5,10,70.00%,100.00%,Normal / Damp,WET LUSH MAGICAL FOREST 
+Oasis,BoP,189,10,10,200.00%,30.00%,Hot / Normal,HOT DRY JUNGLE LUSH SANDY 
+Ominous Woods,BoP,47,10,10,50.00%,90.00%,Normal / Damp,SPOOKY DEAD MAGICAL FOREST SWAMP 
+Orchard,BoP,48,5,7,70.00%,70.00%,Normal / Normal,SPARSE LUSH FOREST PLAINS 
+Origin Valley,BoP,164,0,0,70.00%,80.00%,Normal / Normal,PLAINS 
+Outback,BoP,150,0,0,130.00%,5.00%,Hot / Arid,HOT DRY SAVANNA PLAINS SANDY 
+Polar Chasm,BoP,165,0,0,200.00%,0.00%,Hot / Arid,HOT DRY SAVANNA PLAINS 
+Prairie,BoP,151,0,0,80.00%,30.00%,Normal / Normal,SPARSE DRY PLAINS 
+Quagmire,BoP,233,10,10,80.00%,90.00%,Normal / Damp,WET SPOOKY DEAD SWAMP WASTELAND 
+Rainforest,BoP,49,10,10,100.00%,100.00%,Hot / Damp,DENSE WET JUNGLE LUSH FOREST HILLS 
+Redwood Forest,BoP,50,5,7,70.00%,70.00%,Normal / Normal,DENSE CONIFEROUS FOREST 
+Sacred Springs,BoP,51,5,10,50.00%,50.00%,Normal / Normal,DENSE WET LUSH MAGICAL FOREST MOUNTAIN 
+Scrubland,BoP,152,0,0,120.00%,0.00%,Hot / Arid,HOT SPARSE DRY SAVANNA PLAINS 
+Seasonal Forest Clearing,BoP,166,0,0,50.00%,80.00%,Normal / Normal,PLAINS 
+Seasonal Forest,BoP,52,5,7,50.00%,80.00%,Normal / Normal,DENSE LUSH FOREST 
+Shield,BoP,53,5,10,50.00%,80.00%,Normal / Normal,WET CONIFEROUS OCEAN RIVER FOREST 
+Shrubland,BoP,153,0,0,60.00%,5.00%,Normal / Arid,SPARSE DRY PLAINS 
+Silkglades,BoP,54,10,10,50.00%,90.00%,Normal / Damp,SPOOKY DEAD FOREST SWAMP 
+Sludgepit,BoP,55,10,10,80.00%,90.00%,Normal / Damp,WET SPOOKY DEAD FOREST SWAMP WASTELAND 
+Snowy Coniferous Forest,BoP,32,5,7,0.00%,50.00%,Icy / Normal,COLD DENSE CONIFEROUS FOREST HILLS SNOWY 
+Spectral Garden,BoP,167,0,0,200.00%,0.00%,Hot / Arid,HOT DRY SAVANNA PLAINS 
+Spruce Woods,BoP,56,5,7,70.00%,80.00%,Normal / Normal,DENSE CONIFEROUS LUSH FOREST 
+Steppe,BoP,154,0,0,70.00%,5.00%,Normal / Arid,HOT SPARSE DRY SAVANNA DEAD PLAINS SANDY 
+Temperate Rainforest,BoP,57,5,10,80.00%,120.00%,Normal / Damp,WET CONIFEROUS LUSH FOREST HILLS 
+Thicket,BoP,58,5,6,60.00%,20.00%,Normal / Arid,DENSE DRY DEAD FOREST PLAINS 
+Tropical Rainforest,BoP,n/a,10,10,120.00%,100.00%,Hot / Damp,HOT DENSE WET JUNGLE LUSH 
+Tropics,BoP,5,10,10,120.00%,100.00%,Hot / Damp,WET JUNGLE LUSH OCEAN RIVER BEACH 
+Tundra,BoP,248,0,0,20.00%,50.00%,Cold / Normal,COLD SPARSE DRY DEAD WASTELAND 
+Visceral Heap,BoP,310,0,7,200.00%,0.00%,Hellish / Arid,SPOOKY NETHER 
+Volcano,BoP,134,0,5,200.00%,5.00%,Hellish / Arid,HOT DRY MOUNTAIN WASTELAND 
+Wasteland,BoP,250,0,7,100.00%,5.00%,Hot / Arid,SPARSE SPOOKY DEAD WASTELAND 
+Wetland,BoP,59,10,10,60.00%,90.00%,Normal / Damp,DENSE WET LUSH FOREST SWAMP 
+Woodland,BoP,60,5,6,60.00%,40.00%,Normal / Normal,DENSE DRY FOREST 
+Xeric Shrubland,BoP,168,0,0,100.00%,20.00%,Hot / Arid,HOT PLAINS SANDY 
+Dense Forest,BoP?,169,0,0,70.00%,70.00%,Normal / Normal,PLAINS 
+Ocean Oil Field,BC,259,2,10,50.00%,50.00%,Normal / Normal,OCEAN RIVER 
+Desert Oil Field,BC,183,0,0,200.00%,0.00%,Hot / Arid,SANDY 
+Boneyard,BoP,244,0,7,200.00%,0.00%,Hellish / Arid,SPOOKY NETHER WASTELAND 
+Sunflower Plains,MC,170,0,0,80.00%,40.00%,Normal / Normal,PLAINS 
+Desert M,MC,171,0,0,200.00%,0.00%,Hot / Arid,HOT DRY PLAINS SANDY 
+Extreme Hills M,MC,104,0,4,20.00%,30.00%,Cold / Normal,HILLS 
+Flower Forest,MC,80,5,6,70.00%,80.00%,Normal / Normal,FOREST HILLS 
+Taiga M,MC,106,0,4,25.00%,80.00%,Cold / Normal,HILLS 
+Swampland M,MC,240,10,10,80.00%,90.00%,Normal / Damp,WET SWAMP 
+Storage Cell,AE2,172,0,0,-10000.00%,50.00%,Icy / Normal,COLD PLAINS 
+Corrupted Sands,BoP,187,0,7,200.00%,0.00%,Hellish / Arid,SPOOKY NETHER SANDY 
+Phantasmagoric Inferno,BoP,305,0,7,200.00%,0.00%,Hellish / Arid,SPOOKY NETHER 
+Undergarden,BoP,309,10,10,200.00%,0.00%,Hellish / Arid,JUNGLE SPOOKY NETHER 
+Ice Plains Spikes,MC,107,0,4,0.00%,50.00%,Icy / Normal,COLD HILLS SNOWY 
+moon,GC,n/a,0,0,50.00%,0.00%,Normal / Arid,COLD DRY DEAD 
+marsFlat,GC,184,0,0,50.00%,0.00%,Normal / Arid,COLD DRY DEAD SANDY 
+asteroids,GC,298,0,7,50.00%,0.00%,Normal / Arid,COLD DRY SPOOKY DEAD 
+space (Galacticraft),GC,173,0,0,50.00%,0.00%,Normal / Arid,DRY PLAINS 
+Jungle M,MC,108,0,10,95.00%,90.00%,Warm / Damp,HOT WET HILLS 
+JungleEdge M,MC,109,0,4,95.00%,80.00%,Warm / Normal,HOT HILLS 
+Birch Forest M,MC,110,0,4,60.00%,60.00%,Normal / Normal,HILLS 
+Birch Forest Hills M,MC,111,0,4,60.00%,60.00%,Normal / Normal,HILLS 
+Roofed Forest M,MC,112,0,4,70.00%,80.00%,Normal / Normal,HILLS 
+Cold Taiga M,MC,113,0,4,-50.00%,40.00%,Icy / Normal,COLD HILLS SNOWY 
+Mega Spruce Taiga,MC,81,5,6,25.00%,80.00%,Cold / Normal,DENSE FOREST 
+Extreme Hills+ M,MC,114,0,4,20.00%,30.00%,Cold / Normal,HILLS 
+Savanna M,MC,115,0,4,110.00%,0.00%,Hot / Arid,HOT SPARSE DRY SAVANNA HILLS 
+Savanna Plateau M,MC,116,0,4,100.00%,0.00%,Hot / Arid,HOT SPARSE DRY SAVANNA HILLS 
+Mesa (Bryce),MC,174,0,0,200.00%,0.00%,Hot / Arid,HOT DRY PLAINS SANDY 
+Mesa Plateau F M,MC,82,5,6,200.00%,0.00%,Hot / Arid,HOT DRY FOREST SANDY 
+Mesa Plateau M,MC,175,0,0,200.00%,0.00%,Hot / Arid,HOT DRY PLAINS SANDY 
+Twilight Clearing,TF,159,0,0,80.00%,40.00%,Normal / Normal,SPARSE PLAINS 
+Dark Forest,TF,77,5,7,70.00%,80.00%,Normal / Normal,DENSE SPOOKY FOREST 
+Dark Forest Center,TF,79,5,7,70.00%,80.00%,Normal / Normal,DENSE SPOOKY MAGICAL FOREST 
+Dense Mushroom Forest,TF,76,5,8,80.00%,100.00%,Normal / Damp,MUSHROOM FOREST 
+Fire Swamp,TF,238,10,10,100.00%,40.00%,Hot / Normal,HOT SWAMP WASTELAND 
+Twilight Glacier,TF,219,0,0,0.00%,10.00%,Icy / Arid,COLD SNOWY WASTELAND 
+Twilight Highlands,TF,71,5,7,40.00%,70.00%,Normal / Normal,CONIFEROUS FOREST MOUNTAIN 
+Highlands Center,TF,121,0,0,30.00%,20.00%,Cold / Arid,DRY DEAD MESA WASTELAND 
+Twilight Lake,TF,294,0,10,66.00%,100.00%,Normal / Damp,OCEAN 
+Firefly Forest,TF,75,5,7,50.00%,100.00%,Normal / Damp,LUSH FOREST 
+Mushroom Forest,TF,72,5,8,80.00%,80.00%,Normal / Normal,MUSHROOM FOREST 
+Oak Savanna,TF,74,5,6,90.00%,0.00%,Warm / Arid,SPARSE FOREST 
+Twilight Stream,TF,274,2,9,50.00%,100.00%,Normal / Damp,RIVER 
+Twilight Swamp,TF,237,10,10,80.00%,90.00%,Normal / Damp,WET SWAMP 
+Thornlands,TF,103,0,4,30.00%,20.00%,Cold / Arid,DRY DEAD HILLS WASTELAND 
+Twilight Forest,TF,69,5,6,50.00%,50.00%,Normal / Normal,FOREST 
+Dense Twilight Forest,TF,70,5,6,70.00%,80.00%,Normal / Normal,DENSE FOREST 
+Enchanted Forest,TF,78,5,6,50.00%,50.00%,Normal / Normal,MAGICAL FOREST 
+Eerie,TC,296,0,7,50.00%,50.00%,Normal / Normal,SPOOKY MAGICAL 
+Eldritch,TC,297,0,7,50.00%,50.00%,Normal / Normal,SPOOKY END MAGICAL 
+Magical Forest,TC,25,5,6,70.00%,60.00%,Normal / Normal,MAGICAL FOREST 
+Tainted Land,TC,242,0,6,50.00%,50.00%,Normal / Normal,MAGICAL WASTELAND 
+Snowy Forest,BoP,73,5,7,12.50%,90.00%,Cold / Damp,COLD CONIFEROUS FOREST SNOWY 
+Toxic Everglades,GT,83,5,6,50.00%,70.00%,Normal / Normal,DENSE DEAD FOREST HILLS 
+Ice River,RWG,214,2,9,0.00%,10.00%,Icy / Arid,COLD RIVER SNOWY 
+Space (galaxyspace),GC,314,0,7,50.00%,0.00%,Normal / Arid,"COLD, DRY, SPOOKY, DEAD "
+Cold River,RWG,61,5,9,50.00%,40.00%,Normal / Normal,COLD CONIFEROUS RIVER FOREST 
+Venus,GC,325,0,7,100.00%,0.00%,Hot / Arid,COLD DRY SPOOKY DEAD 
+Pluto,GC,321,0,7,50.00%,0.00%,Normal / Arid,COLD DRY SPOOKY DEAD 
+Temperate River,RWG,62,5,9,80.00%,60.00%,Normal / Normal,COLD RIVER FOREST 
+Pluto2,GC,322,0,7,50.00%,0.00%,Normal / Arid,COLD DRY SPOOKY DEAD 
+Hot River,RWG,192,2,9,80.00%,20.00%,Normal / Arid,HOT DRY RIVER SANDY 
+Pluto3,GC,323,0,7,50.00%,0.00%,Normal / Arid,COLD DRY SPOOKY DEAD 
+Wet River,RWG,272,10,10,90.00%,90.00%,Warm / Damp,HOT WET JUNGLE RIVER 
+Pluto4,GC,324,0,7,50.00%,0.00%,Normal / Arid,COLD DRY SPOOKY DEAD 
+River Oasis,RWG,273,10,10,90.00%,90.00%,Warm / Damp,HOT WET JUNGLE RIVER 
+Kuiper Belt,GC,320,0,7,50.00%,0.00%,Normal / Arid,COLD DRY SPOOKY DEAD 
+Ice Ocean,RWG,6,0,10,0.00%,10.00%,Icy / Arid,COLD OCEAN SNOWY BEACH 
+Cold Ocean,RWG,7,5,10,50.00%,40.00%,Normal / Normal,COLD CONIFEROUS OCEAN FOREST BEACH 
+Io,GC,326,0,7,50.00%,0.00%,Normal / Arid,COLD DRY SPOOKY DEAD 
+Temperate Ocean,RWG,8,5,10,80.00%,60.00%,Normal / Normal,COLD OCEAN FOREST BEACH 
+IoAsh,GC,327,0,7,50.00%,0.00%,Normal / Arid,COLD DRY SPOOKY DEAD 
+Hot Ocean,RWG,9,0,10,80.00%,20.00%,Normal / Arid,HOT DRY OCEAN SANDY BEACH 
+Titan,GC,328,0,7,50.00%,0.00%,Normal / Arid,COLD DRY SPOOKY DEAD 
+BarnardaCShores,GC,315,0,7,116.00%,0.00%,Hot / Arid,COLD DRY SPOOKY DEAD 
+BarnardaCHills,GC,316,0,7,116.00%,0.00%,Hot / Arid,COLD DRY SPOOKY DEAD 
+BarnardaCLowPlains,GC,317,0,7,116.00%,0.00%,Hot / Arid,COLD DRY SPOOKY DEAD 
+Ocean Oasis,RWG,11,10,10,90.00%,90.00%,Warm / Damp,HOT WET JUNGLE OCEAN BEACH 
+Snow Forest,RWG,65,5,7,0.00%,10.00%,Icy / Arid,COLD CONIFEROUS FOREST SNOWY 
+Snow Desert,RWG,216,0,0,0.00%,10.00%,Icy / Arid,COLD SNOWY WASTELAND 
+Cold Plains,RWG,252,0,0,20.00%,20.00%,Cold / Arid,COLD WASTELAND 
+Cold Forest,RWG,66,5,7,50.00%,40.00%,Normal / Normal,COLD DENSE CONIFEROUS FOREST HILLS 
+Hot Plains,RWG,156,0,0,90.00%,10.00%,Warm / Arid,HOT SPARSE SAVANNA PLAINS 
+Hot Forest,RWG,157,0,0,80.00%,20.00%,Normal / Arid,HOT SPARSE SAVANNA PLAINS 
+Hot Desert,RWG,194,0,0,100.00%,0.00%,Hot / Arid,HOT DRY SANDY 
+Plains (RWG),RWG,158,0,0,60.00%,40.00%,Normal / Normal,PLAINS 
+Tropical Island,RWG,n/a,10,10,80.00%,80.00%,Normal / Normal,HOT WET JUNGLE 
+Redwood,RWG,67,5,7,70.00%,60.00%,Normal / Normal,COLD CONIFEROUS FOREST 
+Jungle (RWG),RWG,n/a,10,10,90.00%,90.00%,Warm / Damp,HOT WET JUNGLE 
+Oasis,RWG,176,0,10,90.00%,90.00%,Warm / Damp,HOT WET PLAINS 
+Temperate Forest,RWG,177,0,0,80.00%,60.00%,Normal / Normal,PLAINS 
+Wet Ocean,RWG,10,10,10,90.00%,90.00%,Warm / Damp,HOT WET JUNGLE OCEAN BEACH 
+BarnardaCFlowers,GC,318,0,7,116.00%,0.00%,Hot / Arid,COLD DRY SPOOKY DEAD 
+BarnardaCOceans,GC,319,5,7,116.00%,0.00%,Hot / Arid,COLD DENSE DRY SPOOKY DEAD FOREST HILLS 
+Australian Desert II,Aus,n/a,5,6,50.00%,10.00%,Normal / Arid,DENSE DRY FOREST 
+Australian Desert II,Aus,n/a,0,0,200.00%,0.00%,Hot / Arid,DENSE DRY FOREST 
+Plainlands,Aus,n/a,0,0,80.00%,40.00%,Normal / Normal,SPARSE DRY PLAINS 
+Australian Outback,Aus,n/a,5,6,200.00%,10.00%,Hot / Arid,HOT SPARSE DRY FOREST SANDY 
+Australian Ocean,Aus,n/a,0,10,50.00%,50.00%,Normal / Normal,COLD SPARSE OCEAN PLAINS 
+Australian Forest,Aus,n/a,5,6,110.00%,75.00%,Hot / Normal,HOT DENSE FOREST 
+TCetiE,GC,n/a,0,7,116.00%,0.00%,Hot / Arid,COLD DRY SPOOKY DEAD 
