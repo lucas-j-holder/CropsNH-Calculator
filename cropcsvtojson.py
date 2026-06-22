@@ -1,5 +1,6 @@
 import csv
 import json
+import re
 jsonDict = {}
 
 with open('cropcsv.csv', newline="") as csvFile:
@@ -19,19 +20,26 @@ with open('cropcsv.csv', newline="") as csvFile:
         requirements = stripped_row[6]
         dropMult = float(stripped_row[7].replace("x", ""))
         outputs = stripped_row[8].split(", ")
-        dissectedOutputsArray = {}
+        dissectedOutputsArray = []
         for output in outputs:
-
+            outputRegex = re.compile("(\d+) ([0-9a-zA-Z \-]+) \((\d+\.\d+)%\)") #Tested on regex101.com, need to test via the actual data since there could be oddities.
+            outputMatchGroups = outputRegex.fullmatch(output).groups()
+            outputDict = {
+                "quantity": outputMatchGroups[0],
+                "outputName": outputMatchGroups[1],
+                "outputChance": float(outputMatchGroups[2]) 
+            }
+            dissectedOutputsArray.append(outputDict)
         jsonDict[name] = {"tier": tier,
-                          "friendlyname": friendlyName,
+                          "friendlyName": friendlyName,
                           "name": name,
                           "soil": soil,
-                          "seedbed": seedBed,
-                          "growthpoints": growthPoints,
-                          "biomepreferences": biomePreferences,
+                          "seedBed": seedBed,
+                          "growthPoints": growthPoints,
+                          "biomePreferences": biomePreferences,
                           "requirements": requirements,
-                          "dropmult": dropMult,
-                          "outputs": outputs}
-print(jsonDict)
+                          "dropMult": dropMult,
+                          "outputs": dissectedOutputsArray}
+# print(jsonDict)
 with open("cropjson.json", "w") as jsonfile:
     json.dump(jsonDict,jsonfile)

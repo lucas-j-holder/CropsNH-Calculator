@@ -1,4 +1,3 @@
-const crops = {test: {friendlyName: "test object"}, test2: {friendlyName: "test object2"}}
 const cropDropdown = document.getElementById("cropDropdown")
 
 function updateCropDropdown() {
