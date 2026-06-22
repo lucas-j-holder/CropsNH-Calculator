@@ -1,5 +1,6 @@
 const crops = {test: {friendlyName: "test object"}, test2: {friendlyName: "test object2"}}
 const cropDropdown = document.getElementById("cropDropdown")
+
 function updateCropDropdown() {
     cropDropdown.onchange = readDropdownChange
     for (const [crop, data] of Object.entries(crops)) {

@@ -1,0 +1,178 @@
+Tier ,Crop ,Soil Type ,Min Seed Bed ,Growth Points ,Preferences ,Requirements ,Drops ,Outputs (%) 
+1,Brown Mushroom ,Dirt ,None ,400,"Mushroom, Wet, Swamp ",Needs a light level of 9 or lower ,x0.95 ,1 Mushroom (100.0%) 
+1,Red Mushroom ,Dirt ,None ,400,"Mushroom, Wet, Swamp ",Needs a light level of 9 or lower ,x0.95 ,1 Mushroom (100.0%) 
+1,Eyebulb ,Netherrack ,None ,450,"Spooky, Nether ",,x0.95 ,1 Eyebulb (100.0%) 
+1,Andesite Lily ,Stone ,None ,600,"Mountain, Hills ",Needs a block of andesite below ,x0.95 ,1 Andesite (100.0%) 
+1,Basalt Lily ,Stone ,None ,600,"Mountain, Hills ",Needs a block of basalt below ,x0.95 ,9 Basalt Dust (100.0%) 
+1,Black Granite Lily ,Stone ,None ,600,"Mountain, Hills ",Needs a block of black granite below ,x0.95 ,9 Black Granite Dust (100.0%) 
+1,Deepslate Lily ,Stone ,None ,600,"Mountain, Hills ",Needs a block of deepslate below ,x0.95 ,9 Deepslate Dust (100.0%) 
+1,Diorite Lily ,Stone ,None ,600,"Mountain, Hills ",Needs a block of diorite below ,x0.95 ,1 Diorite (100.0%) 
+1,Granite Lily ,Stone ,None ,600,"Mountain, Hills ",Needs a block of granite below ,x0.95 ,1 Granite (100.0%) 
+1,Marble Lily ,Stone ,None ,600,"Mountain, Hills ",Needs a block of marble below ,x0.95 ,9 Marble Dust (100.0%) 
+1,Nether Stone Lily ,Stone ,None ,600,"Hot, Nether, Dry ",Needs a block of netherrack below ,x0.95 ,9 Netherrack Dust (100.0%) 
+1,Red Granite Lily ,Stone ,None ,600,"Mountain, Hills ",Needs a block of red granite below ,x0.95 ,9 Red Granite Dust (100.0%) 
+1,Sand Lily ,Stone ,None ,600,"Sandy, Hot, Dry ",Needs a block of sand or Sandstone below ,x0.95 ,4 Sand (100.0%) 
+1,Stone Lily ,Stone ,None ,600,"Mountain, Hills ",Needs a block of stone below ,x0.95 ,9 Stone Dust (100.0%) 
+1,Tuff Lily ,Stone ,None ,600,"Mountain, Hills ",Needs a block of tuff below ,x0.95 ,9 Tuff Dust (100.0%) 
+1,Potato ,Farmland ,None ,800,"Cold, Plains ",Needs a light level of 9 or higher ,x0.95 ,1 Potato (100.0%) 
+1,Clay Lily ,Stone ,None ,850,"Wet, Swamp, River ",Needs a block of clay or hardened clay below ,x0.95 ,1 Clay (100.0%) 
+1,End Stone Lily ,Stone ,None ,850,"End, Cold, Dry ",Needs a block of end stone below ,x0.95 ,2 EndStone Dust (100.0%) 
+1,Wheat ,Farmland ,None ,1000,"Lush, Plains ",Needs a light level of 9 or higher ,x0.95 ,1 Wheat (100.0%) 
+1,Acacia Bonsai ,Dirt ,None ,1200,"Savanna, Hot, Sparse, Plains ",,x0.95 ,"1 Acacia Sapling (30.0%), 10 Acacia Log (60.0%) "
+1,Birch Bonsai ,w ,None ,1200,"Hills, Forest ",,x0.95 ,"1 Birch Sapling (30.0%), 10 Birch Log (60.0%) "
+1,Dark Oak Bonsai ,Dirt ,None ,1200,"Spooky, Dense, Forest ",,x0.95 ,"1 Dark Oak Sapling (30.0%), 10 Dark Oak Log (60.0%) "
+1,Jungle Bonsai ,Dirt ,None ,1200,"Wet, Hot, Dense, Jungle ",,x0.95 ,"1 Jungle Sapling (30.0%), 10 Jungle Log (60.0%) "
+1,Oak Bonsai ,Dirt ,None ,1200,"Hills, Forest, Plains ",,x0.95 ,"2 Apple (5.0%), 1 Oak Sapling (30.0%), 10 Oak Log (60.0%) "
+1,Rubber Bonsai ,Dirt ,None ,1200,"Coniferous, Forest ",,x0.95 ,"2 Sticky Resin (5.0%), 1 Rubber Tree Sapling (30.0%), 10 Rubber Wood (60.0%) "
+1,Slimy Bonsai ,Dirt+slimy ,None ,1200,"Wet, Swamp ",,x0.95 ,"1 Slimy Sapling (30.0%), 4 Congealed Green Slime (60.0%) "
+1,Spruce Bonsai ,Dirt ,None ,1200,"Mountain, Coniferous, Forest ",,x0.95 ,"1 Spruce Sapling (30.0%), 10 Spruce Log (60.0%) "
+2,Torchberry ,Farmland ,None ,150,"Hills, Forest ",Needs a light level of 10 or lower ,x0.90 ,1 Torchberries (100.0%) 
+2,Berry ,Farmland ,None ,200,"Dense, Forest ",Needs a light level of 9 or higher ,x0.90 ,3 Berry (100.0%) 
+2,Blackberry ,Farmland ,None ,200,"Lush, Wet, Dense ",Needs a light level of 9 or higher ,x0.90 ,3 Blackberry (100.0%) 
+2,Blueberry ,Farmland ,None ,200,"Lush, Hills, Forest ",Needs a light level of 9 or higher ,x0.90 ,3 Blueberry (100.0%) 
+2,Huckleberry ,Farmland ,None ,200,"Mountain, Hills, Cold, Plains ",Needs a light level of 9 or higher ,x0.90 ,1 Huckleberry (100.0%) 
+2,Maloberry ,Farmland ,None ,200,"Lush, Wet, Cold ",Needs a light level of 9 or higher ,x0.90 ,3 Maloberry (100.0%) 
+2,Raspberry ,Farmland ,None ,200,"Plains, Dry ",Needs a light level of 9 or higher ,x0.90 ,3 Raspberry (100.0%) 
+2,Strawberry ,Farmland ,None ,200,"Lush, Plains ",Needs a light level of 9 or higher ,x0.90 ,1 Strawberry (100.0%) 
+2,Bamboo Chutes ,Dirt ,None ,250,"Lush, Dense, Forest, Jungle ",,x0.90 ,2 Bamboo (100.0%) 
+2,Olivia ,Stone ,None ,400,"Hills, Dry ",Needs a block of olivine garnet below ,x0.90 ,"1 Olivine (25.0%), 1 Olivine Dust (75.0%) "
+2,Sugar Cane ,Sand+Dirt ,None ,400,"Wet, Hot ",,x0.90 ,2 Sugar Canes (100.0%) 
+2,Ivy ,Farmland ,None ,450,"Magical, Dense, Nether, Jungle ",,x0.90 ,2 Ivy (100.0%) 
+2,Turnip ,Farmland ,None ,450,"Wet, Cold, Plains ",Needs a light level of 9 or higher ,x0.90 ,1 Turnip (100.0%) 
+2,Vine ,Farmland ,None ,450,"Lush, Wet, Jungle ",,x0.90 ,2 Vines (100.0%) 
+2,Water Lily ,Farmland ,None ,450,"Wet, Swamp, River ",,x0.90 ,"2 Pink Dye (200.0%), 2 Lily Pad (800.0%) "
+2,Wild Carrot ,Farmland ,None ,450,"Sandy, Hot, Plains ",Needs a light level of 9 or higher ,x0.90 ,1 Wild Carrots (100.0%) 
+2,Allium ,Dirt ,None ,600,"Sandy, Dry, Sparse ",,x0.90 ,1 Magenta Dye (100.0%) 
+2,Azure Bluet ,Dirt ,None ,600,"Lush, Hills, Forest ",,x0.90 ,1 Light Gray Dye (100.0%) 
+2,Blue Orchid ,Dirt ,None ,600,"Wet, Swamp ",,x0.90 ,1 Light Blue Dye (100.0%) 
+2,Dandelion ,Dirt ,None ,600,"Forest, Plains ",,x0.90 ,1 Dandelion Yellow (100.0%) 
+2,Dayflower ,Dirt ,None ,600,"Hills, Cold, Sparse ",,x0.90 ,1 Cyan Dye (100.0%) 
+2,Orange Tulip ,Dirt ,None ,600,"Wet, Plains ",,x0.90 ,1 Orange Dye (100.0%) 
+2,Oxeye Daisy ,Dirt ,None ,600,"Forest, Plains ",,x0.90 ,1 Light Gray Dye (100.0%) 
+2,Pink Tulip ,Dirt ,None ,600,"Wet, Plains ",,x0.90 ,1 Pink Dye (100.0%) 
+2,Poppy ,Dirt ,None ,600,"Hills, Plains ",,x0.90 ,1 Rose Red (100.0%) 
+2,Purple Tulip ,Dirt ,None ,600,"Wet, Plains ",,x0.90 ,1 Purple Dye (100.0%) 
+2,Red Tulip ,Dirt ,None ,600,"Hot, Plains ",,x0.90 ,1 Rose Red (100.0%) 
+2,White Tulip ,Dirt ,None ,600,"Cold, Plains ",,x0.90 ,1 Light Gray Dye (100.0%) 
+2,Barley ,Farmland ,None ,675,"Plains, Dry ",Needs a light level of 9 or higher ,x0.90 ,1 Barley (100.0%) 
+2,Carrot ,Farmland ,None ,800,"Sandy, Hot, Plains ",Needs a light level of 9 or higher ,x0.90 ,1 Carrot (100.0%) 
+2,Pumpkin ,Farmland ,None ,1000,"Wet, Plains ",Needs a light level of 9 or higher ,x0.90 ,1 Pumpkin (100.0%) 
+2,Flax ,Farmland ,None ,1200,"Sandy, Wet, Beach, River ",,x0.90 ,1 String (100.0%) 
+2,Indigo ,Dirt ,None ,1200,"Lush, Wet ",,x0.90 ,1 Indigo Blossom (100.0%) 
+2,Melon ,Farmland ,None ,1200,"Lush, Wet ",Needs a light level of 9 or higher ,x0.90 ,"1 Melon (33.33%), 4 Melon Slice (66.66%) "
+2,Soul Sand Lily ,Stone ,None ,2000,"Sandy, Spooky, Nether ",Needs a block of soul sand below ,x0.90 ,1 Soul Sand (25.0%) 
+3,Cactus ,Sand ,None ,450,"Sandy, Hot, Dry ",,x0.86 ,1 Cactus (100.0%) 
+3,Garlic ,Farmland ,None ,450,"Plains, Dry ",Needs a light level of 9 or higher ,x0.86 ,1 Garlic (100.0%) 
+3,Thronvine ,Netherrack ,None ,450,"Nether, Dry ",,x0.86 ,2 Thornvines (100.0%) 
+3,Blue Glowshroom ,Dirt ,None ,600,"Mushroom, Magical, Nether ",,x0.86 ,1 Blue Glowshroom (100.0%) 
+3,Glowshroom ,Dirt ,None ,600,"Magical, Mushroom, Nether ",,x0.86 ,1 Glowshroom (100.0%) 
+3,Green Glowshroom ,Dirt ,None ,600,"Mushroom, Magical, Nether ",,x0.86 ,1 Green Glowshroom (100.0%) 
+3,Purple Glowshroom ,Dirt ,None ,600,"Mushroom, Magical, Nether ",,x0.86 ,1 Purple Glowshroom (100.0%) 
+3,Flowering Vine ,Farmland ,None ,675,"Dense, Jungle ",,x0.86 ,2 Flowering Vines (100.0%) 
+3,Cotton ,Farmland ,None ,900,"Hot, Dry ",Needs a light level of 9 or higher ,x0.86 ,1 Cotton (100.0%) 
+3,Cocoa ,Farmland ,None ,1700,"Lush, Wet, Dense, Jungle ",Needs a light level of 9 or higher ,x0.86 ,1 Cocoa Beans (100.0%) 
+3,Fertilia ,Farmland ,None ,1800,"Wet, Hot, Swamp ",,x0.86 ,"1 Phosphate Dust (12.50%), 1 Fertilizer (12.50%), 1 Apatite Dust (12.50%), 1 Calcite Dust (62.50%) "
+3,Necrobloom ,Farmland ,None ,1800,"Dead, Wasteland ",,x0.86 ,"1 Purple Dye (5.0%), 1 Poison Powder (95.0%) "
+3,Zomplant ,Graveyard ,None ,1800,"Dead, Wasteland ",,x0.86 ,"1 Zombie Head (0.50%), 1 Zombie Brain (1.50%), 1 Rotten Flesh (98.0%) "
+3,Glowflower ,Dirt ,None ,2000,"Magical, Lush, Wet, Forest ",,x0.86 ,2 Glowflower (100.0%) 
+4,Sticky Cane ,Sand+Dirt ,None ,200,"Sandy, Wet, Hot ",,x0.81 ,1 Sticky Resin (100.0%) 
+4,Blightberry ,Netherrack ,None ,300,"Nether, Dry ",,x0.81 ,2 Blightberry (100.0%) 
+4,Duskberry ,Netherrack ,None ,300,"Hot, Nether ",,x0.81 ,2 Duskberry (100.0%) 
+4,Skyberry ,Netherrack ,None ,300,"Nether, Dry ",,x0.81 ,2 Skyberry (100.0%) 
+4,Stingberry ,Netherrack ,None ,300,"Hot, Nether ",,x0.81 ,2 Stingberry (100.0%) 
+4,Canola ,Farmland ,None ,450,"Cold, Plains ",,x0.81 ,1 Canola Flower (100.0%) 
+4,Goldfish ,Farmland ,None ,450,"Wet, Spooky, River ",,x0.81 ,1 Goldfish (60.0%) 
+4,Moss ,Farmland ,None ,450,"Lush, Wet, Swamp ",,x0.81 ,"1 Moss Patch (5.0%), 1 Moss (30.0%), 1 Tree Moss (65.0%) "
+4,Saguaro Cactus ,Sand ,None ,450,"Sandy, Hot, Dry ",Needs a light level of 9 or higher ,x0.81 ,"2 Saguaro Cactus (50.0%), 3 Saguaro Fruit (50.0%) "
+4,Sugar Beet ,Farmland ,None ,450,"Wet, Cold ",,x0.81 ,1 Sugar Beet (100.0%) 
+4,Inkbloom ,Dirt ,None ,600,"Wet, Ocean ",,x0.81 ,1 Ink Sac (100.0%) 
+4,Chilly ,Farmland ,None ,800,"Lush, Hot ",Needs a light level of 9 or higher ,x0.81 ,1 Chili Pepper (100.0%) 
+4,Cucumber ,Farmland ,None ,800,"Lush, Hot ",Needs a light level of 9 or higher ,x0.81 ,1 Cucumber (100.0%) 
+4,Grape ,Farmland ,None ,800,"Hot, Dry, Sparse ",Needs a light level of 9 or higher ,x0.81 ,1 Grape (100.0%) 
+4,Lemon ,Dirt ,None ,800,"Hot, Dry, Plains ",,x0.81 ,1 Lemon (100.0%) 
+4,Onion ,Farmland ,None ,800,"Sandy, Dry, Sparse ",Needs a light level of 9 or higher ,x0.81 ,1 Onion (100.0%) 
+4,Sapphirum ,Stone ,None ,800,"Wet, Cold, Ocean ",Needs a block of sapphire below ,x0.81 ,"1 Sapphire (25.0%), 1 Sapphire Dust (75.0%) "
+4,Tomato ,Farmland ,None ,800,"Wet, Hot ",Needs a light level of 9 or higher ,x0.81 ,"1 Max Tomato (25.0%), 1 Tomato (75.0%) "
+4,Belladonna ,Farmland ,None ,1100,"Wet, Spooky ",,x0.81 ,1 Belladonna Flower (100.0%) 
+4,Glint Weed ,Farmland ,None ,1100,"Magical, Sandy, Plains ",,x0.81 ,1 Glint Weed (100.0%) 
+4,Mandrake ,Farmland ,None ,1100,"Magical, Spooky ",,x0.41 ,1 Mandrake Root (100.0%) 
+4,Snowbell ,Farmland ,None ,1100,"Cold, Snowy ",,x0.81 ,"1 Cryolite Dust (2.50%), 1 Snowball (10.0%), 1 Icy Needle (89.0%) "
+4,Water Artichoke ,Farmland ,None ,1100,"Wet, River, Ocean ",Needs a light level of 9 or higher ,x0.81 ,1 Water Artichoke Globe (100.0%) 
+4,Wolfsbane ,Farmland ,None ,1100,"Magical, Spooky, Forest ",,x0.81 ,1 Wolfsbane (100.0%) 
+4,Oil Berry ,Sand ,None ,1200,"Hot, Wasteland ",,x0.81 ,2 Oil Berry (100.0%) 
+4,Glowheat ,Netherrack ,None ,1500,"Hot, Nether, Plains ",Needs a block of glowstone below ,x1.50 ,1 Glowstone Dust (100.0%) 
+4,Salty Root ,Farmland ,None ,1600,"Sandy, Dead, Dry ",,x4.00 ,1 Salty Root (100.0%) 
+4,Spidernip ,Farmland ,None ,2400,"Lush, Wet ",,x0.81 ,"1 Spider Eye (16.67%), 1 Cobweb (16.67%), 1 String (66.66%) "
+4,Tea ,Farmland ,None ,2400,"Wet, Hills, Hot ",,x0.81 ,1 Tea Leaf (100.0%) 
+4,Tin Oreberry ,Stone ,None ,6000,"Mountain, Hills ","Needs a block of tin below, and a light level of 10 or lower ",x0.81 ,6 Tin Oreberry (100.0%) 
+5,Glowing Coral ,Farmland ,None ,450,"River, Ocean ",Needs a block of glowstone below ,x0.77 ,2 Glowing Coral (100.0%) 
+5,Papyrus ,Farmland ,None ,450,"Wet, Swamp, Jungle ",,x0.77 ,1 Paper (100.0%) 
+5,Corpseplant ,Graveyard ,None ,800,"Dead, Spooky ",,x0.77 ,"1 Bone (12.50%), 1 Rotten Flesh (25.0%), 1 Bone Meal (62.50%) "
+5,Hemp ,Farmland ,None ,800,"Sandy, Dry ",,x0.77 ,1 Hemp Stem (100.0%) 
+5,Gaia Wart ,Soulsand ,None ,1000,"Cold, Snowy ",Needs a block of snow below ,x0.80 ,1 Gaia Wart (100.0%) 
+5,Nickelback ,Stone ,None ,1000,"Lush, Plains ",Needs a block of nickel below ,x0.77 ,1 Nickelback (100.0%) 
+5,Tine ,Stone ,None ,1000,"Mountain, Hills ",Needs a block of tin below ,x0.77 ,1 Tine Twig (100.0%) 
+5,Mana Bean ,Thaum Logs ,None ,2000,"Magical, Forest ",Needs a mixed crystal cluster below ,x0.77 ,"1 Mana Bean Terra (16.66%), 1 Mana Bean Aer (16.66%), 1 Mana Bean Ignis (16.66%), 1 Mana Bean Aqua (16.66%), 1 Mana Bean Ordo (16.66%), 1 Mana Bean Perditio (16.66%) "
+5,Nether Wart ,Soulsand ,None ,2000,"Hot, Nether ",,x2.00 ,1 Nether Wart (100.0%) 
+5,Hops ,Farmland ,None ,2400,"Lush, Plains ",Needs a light level of 9 or higher ,x0.77 ,1 Hops (100.0%) 
+5,Cinderpearl ,Dirt ,None ,4000,"Magical, Hot, Dry ",Needs a block of blaze below ,x0.77 ,1 Cinderpearl (100.0%) 
+5,Shimmerleaf ,Dirt ,None ,4000,"Magical, Lush ",Needs a block of quicksilver below ,x0.77 ,1 Shimmerleaf (100.0%) 
+5,Aluminium Oreberry ,Stone ,None ,6000,"Cold, Dry ","Needs a block of aluminium below, and a light level of 10 or lower ",x0.77 ,6 Aluminum Oreberry (100.0%) 
+5,Ardite Oreberry ,Stone ,None ,6000,"Hot, Nether ","Needs a block of ardite below, and a light level of 10 or lower ",x0.77 ,6 Ardite Nugget (100.0%) 
+5,Cobalt Oreberry ,Stone ,None ,6000,"Nether, Dry ","Needs a block of cobalt below, and a light level of 10 or lower ",x0.77 ,1 Cobalt Nugget (100.0%) 
+5,Copper Oreberry ,Stone ,None ,6000,"Savanna, Sandy, Hot ","Needs a block of copper below, and a light level of 10 or lower ",x0.77 ,6 Copper Oreberry (100.0%) 
+5,Essence Berry ,Stone ,None ,6000,"Magical, Dead ",Needs a skull below ,x0.77 ,6 Concentrated Essence Berry (100.0%) 
+5,Gold Oreberry ,Stone ,None ,6000,"Sandy, Mesa ","Needs a block of gold below, and a light level of 10 or lower ",x0.77 ,6 Gold Oreberry (100.0%) 
+5,Iron Oreberry ,Stone ,None ,6000,"Mountain, Hills ","Needs a block of iron below, and a light level of 10 or lower ",x0.77 ,6 Iron Oreberry (100.0%) 
+6,Corium ,Farmland ,None ,800,"Forest, Plains ",,x0.74 ,1 Leather (100.0%) 
+6,Bauxia ,Stone ,None ,1200,"Cold, Dry ",Needs a block of aluminium or bauxite below ,x0.74 ,1 Bauxia Leaf (100.0%) 
+6,Coppon ,Stone ,None ,1200,"Savanna, Sandy, Hot ",Needs a block of copper below ,x0.74 ,1 Coppon Fiber (100.0%) 
+6,Egg Plant ,Farmland ,None ,1200,"Forest, Plains ",Needs a light level of 9 or higher ,x0.74 ,"1 Raw Chicken (10.0%), 1 Feather (30.0%), 1 Egg (60.0%) "
+6,Galvania ,Stone ,None ,1200,"Hot, Dry ",Needs a block of zinc or sphalerite below ,x0.74 ,1 Galvania Leaf (100.0%) 
+6,Plumbilia ,Stone ,None ,1200,"Savanna, Plains ",Needs a block of lead or galena below ,x0.74 ,1 Plumbilia Leaf (100.0%) 
+6,Slimeplant ,Dirt ,None ,1200,"Wet, Swamp ",,x0.74 ,1 Slimeball (100.0%) 
+6,Redstraw ,Farmland ,None ,1500,"Hot, Plains ","Needs a block of redstone below, and a light level between 5-12 ",x0.85 ,1 RedStone Dust (100.0%) 
+6,Milk Wart ,Farmland ,None ,2400,"Lush, Plains ",,x0.74 ,1 Milk Wart (100.0%) 
+6,Cassitine ,Stone ,None ,2800,"Cold, Sparse, Dry ",Needs a block of tin below ,x0.74 ,1 Tiny Pile of Tin Dust (100.0%) 
+6,Ferrofern ,Stone ,None ,2800,"Mountain, Hills ",Needs a block of iron below ,x0.74 ,1 Ferrofern Leaf (100.0%) 
+6,Malaxia ,Stone ,None ,2800,"Lush, Plains ",Needs a block of copper below ,x0.74 ,1 Tiny Pile of Copper Dust (100.0%) 
+6,Plumbshade ,Stone ,None ,2800,"Wet, Hot ",Needs a block of lead or galena below ,x0.74 ,1 Tiny Pile of Lead Dust (100.0%) 
+6,Bobs-Yer-Uncle-Ranks ,Stone ,None ,3000,"Mountain, Hills ",Needs a block of emerald below ,x0.74 ,1 Bobs-Yer-Uncle-Berry (100.0%) 
+6,Blazereed ,Netherrack ,None ,3600,"Hot, Nether ",,x0.74 ,"1 Blaze Rod (25.0%), 1 Blaze Powder (75.0%) "
+6,Trollplant ,Brick ,None ,4800,"Spooky, Swamp ",,x0.74 ,"1 Plutonium 241 Dust (12.50%), 1 Scrap (12.50%), 1 Plantball (12.50%), 1 Spinel (62.50%) "
+7,Spanish Moss ,Farmland ,None ,675,"Lush, Wet, Swamp, Forest ",,x0.70 ,1 Spanish Moss (100.0%) 
+7,Garnydinia ,Stone ,None ,850,"Savanna, Sandy, Mesa ",Needs a block of red or yellow garnet or garnet sand below ,x0.70 ,"1 Purified Red Garnet Ore (2.50%), 1 Purified Yellow Garnet Ore (2.50%), 1 Exquisite Yellow Garnet (2.50%), 1 Exquisite Red Garnet (2.50%), 1 Red Garnet Dust (22.50%), 1 Yellow Garnet (22.50%), 1 Yellow Garnet Dust (22.50%), 1 Red Garnet (22.50%) "
+7,Creeperweed ,Farmland ,None ,1000,"Dead, Spooky ",,x0.70 ,1 Gunpowder (100.0%) 
+7,Ember Moss ,Farmland ,None ,1100,"Hot, Dry ",,x0.70 ,1 Ember Moss (100.0%) 
+7,Argentia ,Stone ,None ,1400,"Mountain, Hot ",Needs a block of silver under it to grow ,x0.70 ,1 Argentia Leaf (100.0%) 
+7,Coffee ,Farmland ,None ,2800,"Lush, Wet, Hot ",Needs a light level of 9 or higher ,x0.70 ,1 Coffee (100.0%) 
+7,Lazulia ,Stone ,None ,2800,"Sandy, Hot ",Needs a block of lapis under it to grow ,x0.70 ,"1 Lapis Lazuli (33.33%), 1 Lapis Dust (66.67%) "
+7,Thaumium Oreberry ,Stone ,None ,3000,"Magical, Spooky ","Needs a block of thaumium below, and a light level of 10 or lower ",x0.70 ,1 Thaumium Nugget (100.0%) 
+7,Meatrose ,Dirt ,None ,4200,"Magical, Plains ",Needs a light level of 9 or higher ,x0.70 ,"1 Raw Beef (10.0%), 1 Raw Porkchop (10.0%), 1 Raw Chicken (10.0%), 1 Raw Cod (10.0%), 1 Pink Dye (60.0%) "
+7,Thauminite Oreberry ,Stone ,None ,4500,"Magical, Forest ","Needs a block of thauminite below, and a light level of 10 or lower ",x0.70 ,1 Thauminite Nugget (100.0%) 
+7,Void Metal Oreberry ,Stone ,None ,4500,"Magical, Wasteland ","Needs a block of void below, and a light level of 10 or lower ",x0.70 ,1 Void Metal Nugget (100.0%) 
+8,Evil Ore ,Netherrack ,None ,1600,"Hot, Nether, Dry ",,x0.66 ,"1 Certus Quartz Dust (16.67%), 1 Nether Quartz (16.67%), 1 Nether Quartz Dust (66.66%) "
+8,Auronia ,Stone ,None ,3700,"Sandy, Mesa ",Needs a block of gold below ,x0.66 ,1 Auronia Leaf (100.0%) 
+8,Silviscus ,Stone ,None ,3700,"Spooky, Cold, Snowy ",Needs a block of silver below ,x0.66 ,1 Tiny Pile of Silver Dust (100.0%) 
+8,Liveroot ,Farmland ,None ,4800,"Spooky, Dense ",,x0.66 ,"1 Liveroot Dust (75.0%), 1 Liveroot (75.0%) "
+8,Tearstalks ,Farmland ,None ,4800,"Dead, Nether ",,x0.66 ,1 Ghast Tear (66.66%) 
+8,Withereed ,Stone ,None ,4800,"Dead, Spooky ",Needs a block of coal below ,x0.66 ,"1 Wither Skeleton Skull (1.29%), 1 Skeleton Skull (2.58%), 1 Coal (33.33%), 1 Coal Dust (66.67%) "
+8,Knightly Oreberry ,Stone ,None ,5500,"Spooky, Dead ","Needs a block of knightmetal below, and a light level of 10 or lower ",x0.66 ,4 Armor Shard (100.0%) 
+9,Micadia ,Stone ,None ,1800,"Hills, Sparse ",Needs a block of mica or cupronickel coil below ,x0.63 ,1 Micadia Flower (100.0%) 
+9,Titania ,Stone ,EV ,1800,"Savanna, Hot ","IF only, needs a block of titanium, ilmenite, or rutile below ",x0.63 ,1 Titania Leaf (100.0%) 
+9,God of Thunder ,Stone ,HV ,3600,"Wasteland, Sparse ","IF only, needs a block of thorium or thorianite below ",x0.63 ,1 Thunder Flower (100.0%) 
+10,Enderbloom ,Farmland ,None ,3000,"End, Cold ",Needs a block of end stone below ,x0.60 ,"1 Eye of Ender (12.50%), 1 Ender Pearl (25.0%), 1 Enderpearl Dust (62.50%) "
+10,Steeleafranks ,Stone ,None ,6000,"Spooky, Dead ",,x0.60 ,"1 Steeleaf (25.0%), 1 Steeleaf Dust (25.0%) "
+11,Platina ,Stone ,HV ,6600,"Sandy, Hot ","IF only, needs a block of platinum or sheldonite below ",x0.57 ,1 Platina Leaf (100.0%) 
+12,Pyrolusium ,Stone ,None ,2400,"Hot, Nether ",Needs a block of manganese or pyrolusite below ,x0.54 ,1 Pyrolusium Leaf (100.0%) 
+12,Scheelinium ,Stone ,EV ,2400,"Wet, Cold, Ocean ","IF only, needs a block of tungsten, scheelite, or tungstate below ",x0.54 ,1 Scheelinium Leaf (100.0%) 
+12,Reactoria ,Stone ,EV ,4800,"Hot, Cold ","IF only, needs a block of uranium, uraninite, or pitchblende below ",x0.54 ,"1 Reactoria Stem (25.0%), 1 Reactoria Leaf (75.0%) "
+12,Diareed ,Stone ,None ,7200,"Cold, Sparse ",Needs a block of diamond below ,x0.54 ,"1 Diamond Dust (25.0%), 1 Diamond (75.0%) "
+12,Iridine ,Stone ,IV ,7200,"Cold, Snowy ","IF only, needs a block of iridium below ",x0.54 ,1 Iridine Leaf (75.0%) 
+12,Osmianth ,Stone ,IV ,7200,"River, Ocean ","IF only, needs a block of osmium below ",x0.54 ,1 Osmianth Flower (25.0%) 
+12,Star Wart ,Stone ,IV ,7200,"Dead, Nether ","IF only, needs a block of nether star below ",x0.54 ,1 Star Wart (100.0%) 
+12,Stargatium ,Stone ,IV ,7200,"Lush, Wasteland ","IF only, needs a block of naquadah below ",x0.54 ,"1 Endstone Dust (25.0%), 1 Stargatium Leaf (75.0%) "
+12,Transformium ,Farmland ,IV ,7200,"End, Cold ",IF only ,x0.54 ,"1 UUM Berry (10.0%), 1 UUA Berry (90.0%) "
+13,Space Flower ,Farmland ,IV ,15000,"Dead, Cold, Dry ","IF only, needs a block from space below ",x0.51 ,1 Space Flower (100.0%) 
+13,Magical Nightshade ,Farmland ,EV ,23436,"Magical, Cold ","IF only, needs a block of shadow metal below ",x0.39 ,1 Magic Essence (100.0%) 
+16,Primordial Berry ,Farmland ,None ,375000,"Magical, End ",,x0.50 ,1 Primordial Pearl (100.0%) 
