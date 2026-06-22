@@ -1,0 +1,1 @@
+const crops = {test: {friendlyName: "test object"}}
