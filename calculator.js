@@ -1,10 +1,12 @@
 function initCalculator() {
-    cropDropdown.onchange = calculateCrop
+    cropDropdown.onchange = cropChanged
     biomeDropdown.onchange = calculateCrop
     hydratedCheckbox.addEventListener('change', calculateCrop) 
     fertilizedCheckbox.addEventListener('change', calculateCrop)
     skyCheckbox.addEventListener('change', calculateCrop)
-    
+    growthStatField.addEventListener('change', calculateCrop) 
+    gainStatField.addEventListener('change', calculateCrop) 
+    resistanceStatField.addEventListener('change', calculateCrop) 
 }
 
 function findGoodBiomes(crop) {
@@ -61,6 +63,28 @@ function calculateGrowthSpeedMultiplier (nutrientSupply, nutrientDemand) {
     }
 }
 
+function cropChanged() {
+    let crop = cropDropdown.children[cropDropdown.selectedIndex].id
+    findGoodBiomes(crop)
+    calculateCrop()
+}
+
+function calculateGrowthPerCycle(growthSpeedMultiplier, growthStat, crop) {
+    let baseSpeed = 6 + growthStat
+    console.log(Math.trunc(baseSpeed * growthSpeedMultiplier))
+    return Math.trunc(baseSpeed * growthSpeedMultiplier) // Java truncates when converting from a float to an int. Explicitly truncated here just in case.
+}
+
+function calculateFullGrowthsPerHour(growthSpeedMultiplier, growthStat, crop) {
+    let growthPerCycle = calculateGrowthPerCycle(growthSpeedMultiplier, growthStat, crop)
+    let growthPointsPerGrowth = crops[crop].growthPoints
+    let cyclesPerGrowth = Math.ceil(growthPointsPerGrowth / growthPerCycle)
+    let cyclesPerHour = 72000 / 256
+    console.log(cyclesPerHour)
+    let growthsPerHour = cyclesPerHour / cyclesPerGrowth // Leaving as a float since carryover progress is possible.
+    return growthsPerHour
+}
+
 function calculateCrop() {
     let crop = cropDropdown.children[cropDropdown.selectedIndex].id
     let biome = biomeDropdown.children[biomeDropdown.selectedIndex].id
@@ -75,12 +99,15 @@ function calculateCrop() {
     let growthSpeedMultiplier = calculateGrowthSpeedMultiplier(nutrientSupply, nutrientDemand)
 
     let canBecomeSick = (nutrientDemand - nutrientSupply > 25)
+    let growthStat = parseInt(growthStatField.value)
+    let gainStat = parseInt(growthStatField.value)
+    let resistanceStat = parseInt(growthStatField.value)
 
-    console.log(`${totalNutrients} - ${nutrientSupply} - ${nutrientDemand} - ${growthSpeedMultiplier} - ${canBecomeSick}`)
+    let growthSpeed = calculateGrowthPerCycle(growthSpeedMultiplier, growthStat, crop)
+    console.log(calculateFullGrowthsPerHour(growthSpeedMultiplier, growthStat, crop))
 
-
-    findGoodBiomes(crop)
-    
+    console.log(`${totalNutrients} - ${nutrientSupply} - ${nutrientDemand} - ${growthSpeedMultiplier} - ${canBecomeSick}`)    
 }
 
 initCalculator()
+cropChanged()
