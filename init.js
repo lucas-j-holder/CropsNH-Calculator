@@ -1,5 +1,9 @@
 const cropDropdown = document.getElementById("cropDropdown")
 const biomeDropdown = document.getElementById("biomeDropdown")
+const hydratedCheckbox = document.getElementById("hydrated")
+const fertilizedCheckbox = document.getElementById("fertilized")
+const skyCheckbox = document.getElementById("canSeeSky")
+
 
 function updateCropDropdown() {
     for (const [crop, data] of Object.entries(crops)) {

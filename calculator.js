@@ -1,39 +1,49 @@
 function initCalculator() {
     cropDropdown.onchange = calculateCrop
     biomeDropdown.onchange = calculateCrop
+    hydratedCheckbox.addEventListener('change', calculateCrop) 
+    fertilizedCheckbox.addEventListener('change', calculateCrop)
+    skyCheckbox.addEventListener('change', calculateCrop)
+    
 }
 
 function findGoodBiomes(crop) {
     goodBiomesListDiv = document.getElementById("goodBiomesList")
-    cropBiomePreferences = crops[crop]["biomePreferences"]
+    
     let idealBiomes = []
     for (const [biome, data] of Object.entries(biomes)) {
-        matchingTags = 0
-        for (tag of cropBiomePreferences) {
-            if (data.tags.includes(tag.toUpperCase())) {
-                matchingTags = matchingTags + 1
-            }
-        }
-        let nutrients = calculateBiomeNutrientsFromTagMatches(biome, matchingTags)
+        let nutrients = calculateBiomeNutrients(biome, crop)
         idealBiomes.push([biome, nutrients])
     }
     idealBiomes.sort((a, b) => b[1] - a[1])
-
+    while (goodBiomesListDiv.firstChild) {
+            goodBiomesListDiv.removeChild(goodBiomesListDiv.firstChild)
+    }
     for ([biome, nutrients] of idealBiomes) {
+        if (nutrients == 0) {
+            continue;
+        }
         element = document.createElement("p")
         element.class = "goodBiome"
         element.innerHTML = `${biomes[biome].friendlyName} - ${nutrients}`
         goodBiomesListDiv.append(element)
     }
-    console.log(idealBiomes)
+}
+
+function calculateBiomeNutrients(biome, crop) {
+    cropBiomePreferences = crops[crop]["biomePreferences"]
+    matchingTags = 0
+        for (tag of cropBiomePreferences) {
+            if (biomes[biome].tags.includes(tag.toUpperCase())) {
+                matchingTags = matchingTags + 1
+            }
+        }
+    return calculateBiomeNutrientsFromTagMatches(biome, matchingTags)
 }
 
 function calculateBiomeNutrientsFromTagMatches(biome, matches) {
-    if (matches == 0) {
-        return calculateBiomeNutrientsFromHumidity(biome, biomes[biome].humidity)
-    } else {
-        return Math.min(2, matches) * 14
-    }
+    let humidityValue = calculateBiomeNutrientsFromHumidity(biome, biomes[biome].humidity)
+    return Math.max(humidityValue, Math.min(2, matches) * 14)
 }
 
 function calculateBiomeNutrientsFromHumidity(biome, humidity) {
@@ -41,10 +51,36 @@ function calculateBiomeNutrientsFromHumidity(biome, humidity) {
     return nutrients
 }
 
+function calculateGrowthSpeedMultiplier (nutrientSupply, nutrientDemand) {
+    if (nutrientSupply == nutrientDemand) {
+        return 1.0
+    } else if (nutrientSupply > nutrientDemand) {
+        return 1.0 + ((nutrientSupply - nutrientDemand) / 100)
+    } else {
+        return 1.0 - (((nutrientDemand - nutrientSupply)*4)/100)
+    }
+}
+
 function calculateCrop() {
     let crop = cropDropdown.children[cropDropdown.selectedIndex].id
+    let biome = biomeDropdown.children[biomeDropdown.selectedIndex].id
+    let waterBonus = hydratedCheckbox.checked ? 10 : 0
+    let fertilizerBonus = fertilizedCheckbox.checked ? 10 : 0
+    let skyBonus = skyCheckbox.checked ? 2 : 0
+
+    let totalNutrients = calculateBiomeNutrients(biome, crop) + waterBonus + fertilizerBonus + skyBonus + 5
+    let nutrientSupply = totalNutrients * 5
+    let nutrientDemand = crops[crop].tier * 10
+
+    let growthSpeedMultiplier = calculateGrowthSpeedMultiplier(nutrientSupply, nutrientDemand)
+
+    let canBecomeSick = (nutrientDemand - nutrientSupply > 25)
+
+    console.log(`${totalNutrients} - ${nutrientSupply} - ${nutrientDemand} - ${growthSpeedMultiplier} - ${canBecomeSick}`)
+
+
     findGoodBiomes(crop)
-    console.log(crop)
+    
 }
 
 initCalculator()

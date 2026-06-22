@@ -16,15 +16,36 @@
 
     <label>Biome:</label>
     <select id="biomeDropdown"></select>
-    <script src="constants.js"></script>
-    <script src="init.js"></script>
-    <script src="calculator.js"></script>
+
 
     <div id="goodBiomes">
       <b>Biome - Nutrient Score (Greatest to least, no 0 nutrient biomes.)</b>
       <div id="goodBiomesList">
-        
+
       </div>
     </div>
+    <label>Crops constantly hydrated?</label>
+    <input type="checkbox" id="hydrated">
+
+    <label>Crops constantly fertilized?</label>
+    <input id="fertilized" type="checkbox">
+
+    <label>Crops able to see the sky?</label>
+    <input id="canSeeSky" type="checkbox">
+
+
+    <label>Growth Stat:</label>
+    <input type="number" min="0" max="31" value="0" id="growthStat">
+    <label>Gain Stat:</label>
+    <input type="number" min="0" max="31" value="0" id="gainStat">
+    <label>Resistance Stat:</label>
+    <input type="number" min="0" max="31" value="0" id="resistanceStat">
   </body>
+
+
+
+
+    <script src="constants.js"></script>
+    <script src="init.js"></script>
+    <script src="calculator.js"></script>
 </html>
