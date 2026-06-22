@@ -11,12 +11,20 @@
     
 
     <h1>CropsNH Crop Calculator</h1>
-    <h3>Crop:</h3>
+    <label>Crop:</label>
     <select id="cropDropdown"></select>
 
-    <h3>Biome:</h3>
+    <label>Biome:</label>
     <select id="biomeDropdown"></select>
     <script src="constants.js"></script>
     <script src="init.js"></script>
+    <script src="calculator.js"></script>
+
+    <div id="goodBiomes">
+      <b>Biome - Nutrient Score (Greatest to least, no 0 nutrient biomes.)</b>
+      <div id="goodBiomesList">
+        
+      </div>
+    </div>
   </body>
 </html>
