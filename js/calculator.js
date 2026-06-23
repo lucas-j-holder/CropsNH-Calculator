@@ -6,11 +6,10 @@ function initCalculator() {
     skyCheckbox.addEventListener('change', calculateCrop)
     growthStatField.addEventListener('change', calculateCrop) 
     gainStatField.addEventListener('change', calculateCrop) 
-    resistanceStatField.addEventListener('change', calculateCrop) 
 }
 
 function findGoodBiomes(crop) {
-    goodBiomesListDiv = document.getElementById("goodBiomesList")
+    goodBiomesListTableBody = document.getElementById("goodBiomesList")
     
     let idealBiomes = []
     for (const [biome, data] of Object.entries(biomes)) {
@@ -18,17 +17,18 @@ function findGoodBiomes(crop) {
         idealBiomes.push([biome, nutrients])
     }
     idealBiomes.sort((a, b) => b[1] - a[1])
-    while (goodBiomesListDiv.firstChild) {
-            goodBiomesListDiv.removeChild(goodBiomesListDiv.firstChild)
+    while (goodBiomesListTableBody.firstChild) {
+            goodBiomesListTableBody.removeChild(goodBiomesListTableBody.firstChild)
     }
     for ([biome, nutrients] of idealBiomes) {
         if (nutrients == 0) {
             continue;
         }
-        element = document.createElement("p")
-        element.class = "goodBiome"
-        element.innerHTML = `${biomes[biome].friendlyName} - ${nutrients}`
-        goodBiomesListDiv.append(element)
+        element = document.createElement("tr")
+        element.class = "goodBiomeRow"
+
+        element.innerHTML = `<td>${biomes[biome].friendlyName}</td>\n<td>${Number.parseFloat(nutrients).toFixed(2)}</td>`
+        goodBiomesListTableBody.append(element)
     }
 }
 
@@ -100,6 +100,7 @@ function calculateDropsPerHarvest(gainStat, crop) {
 
 function calculateDropsPerHour(gainStat, growthStat, crop, growthSpeedMultiplier) {
     growthCount = calculateFullGrowthsPerHour(growthSpeedMultiplier, growthStat, crop)
+    fullCropGrowths.innerHTML = growthSpeedMultiplier > 0.0 ? Number.parseFloat(growthCount).toFixed(4) : `<span style=\"color:red;font-weight:800\">${Number.parseFloat(growthCount).toFixed(4)} - CROP CAN GET SICK.</span>`
     let drops = calculateDropsPerHarvest(gainStat, crop)
     fullHourDrops = []
     for ([quantity, dropName] of drops) {
@@ -108,9 +109,20 @@ function calculateDropsPerHour(gainStat, growthStat, crop, growthSpeedMultiplier
     return fullHourDrops
 }
 
-function calculateCrop() {
-    let crop = cropDropdown.children[cropDropdown.selectedIndex].id
-    let biome = biomeDropdown.children[biomeDropdown.selectedIndex].id
+function updateDropTable(tableNode, drops) {
+    while (tableNode.firstChild) {
+            tableNode.removeChild(tableNode.firstChild)
+    }
+    for ([quantity, drop] of drops) {
+        element = document.createElement("tr")
+        element.class = "dropRow"
+
+        element.innerHTML = `<td>${drop}</td>\n<td>${Number.parseFloat(quantity).toFixed(5)}</td>`
+        tableNode.append(element)
+    }
+}
+
+function updateDropTables(crop, biome) {
     let waterBonus = hydratedCheckbox.checked ? 10 : 0
     let fertilizerBonus = fertilizedCheckbox.checked ? 10 : 0
     let skyBonus = skyCheckbox.checked ? 2 : 0
@@ -124,13 +136,23 @@ function calculateCrop() {
     let canBecomeSick = (nutrientDemand - nutrientSupply > 25)
     let growthStat = parseInt(growthStatField.value)
     let gainStat = parseInt(gainStatField.value)
-    let resistanceStat = parseInt(resistanceStatField.value)
 
     let growthSpeed = calculateGrowthPerCycle(growthSpeedMultiplier, growthStat, crop)
-    console.log(calculateDropsPerHour(gainStat, growthStat, crop, growthSpeedMultiplier))
+
+
+
+
+    updateDropTable(dropPerHourList, calculateDropsPerHour(gainStat, growthStat, crop, growthSpeedMultiplier))
     
-    console.log(calculateDropsPerHarvest(gainStat, crop))
-    console.log(`${totalNutrients} - ${nutrientSupply} - ${nutrientDemand} - ${growthSpeedMultiplier} - ${canBecomeSick}`)    
+    updateDropTable(dropPerHarvestList, calculateDropsPerHarvest(gainStat, crop))
+    // console.log(`${totalNutrients} - ${nutrientSupply} - ${nutrientDemand} - ${growthSpeedMultiplier} - ${canBecomeSick}`)    
+}
+
+function calculateCrop() {
+    let crop = cropDropdown.children[cropDropdown.selectedIndex].id
+    let biome = biomeDropdown.children[biomeDropdown.selectedIndex].id
+    
+    updateDropTables(crop, biome)
 }
 
 initCalculator()

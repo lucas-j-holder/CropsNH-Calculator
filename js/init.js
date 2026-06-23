@@ -5,7 +5,11 @@ const fertilizedCheckbox = document.getElementById("fertilized")
 const skyCheckbox = document.getElementById("canSeeSky")
 const growthStatField = document.getElementById("growthStat")
 const gainStatField = document.getElementById("gainStat")
-const resistanceStatField = document.getElementById("resistanceStat")
+
+const dropPerHarvestList = document.getElementById("dropPerHarvestList")
+const dropPerHourList = document.getElementById("dropPerHourList")
+
+const fullCropGrowths = document.getElementById("fullCropGrowths")
 
 function updateCropDropdown() {
     for (const [crop, data] of Object.entries(crops)) {
