@@ -55,40 +55,40 @@
           </div>
           <div class="inputFieldDiv">
             <h5>Industrial Farm Settings:</h5>
-            <label for="cropDropdown">
-            <span class="label-body">Crop:</span>
-            <select id="cropDropdown"></select>
+            <label for="machineDropdown">
+            <span class="label-body">Industrial Farm Tier:</span>
+            <select id="machineDropdown"></select>
           </label>
           
 
-          <label for="biomeDropdown">
-            <span class="label-body">Biome:</span>
-            <select id="biomeDropdown"></select>
+          <label for="overclockDropdown">
+            <span class="label-body">Overclock Voltage Tier:</span>
+            <select id="overclockDropdown"></select>
           </label>
           
-          <label for="hydrated">
-            <input type="checkbox" id="hydrated">
-            <span class="label-body"> Crops constantly hydrated? </span>
+          <label for="growthAccelerationUnit">
+            <input type="checkbox" id="growthAccelerationUnit">
+            <span class="label-body"> Growth Acceleration Unit installed? </span>
           </label>
           
-          <label for="fertilized">
-            <input type="checkbox" id="fertilized">
-            <span class="label-body"> Crops constantly fertilized? </span>
+          <label for="overclockedGrowthAccelerationUnit">
+            <input type="checkbox" id="overclockedGrowthAccelerationUnit">
+            <span class="label-body"> Overclocked Growth Acceleration Unit installed? </span>
           </label>
 
-          <label for="canSeeSky">
-            <input type="checkbox" id="canSeeSky">
-            <span class="label-body"> Crops able to see the sky? </span>
+          <label for="fertilizationUnit">
+            <input type="checkbox" id="fertilizationUnit">
+            <span class="label-body"> Fertilization Unit Installed? </span>
           </label>
 
 
-          <label for="growthStat">
-            <span class="label-body">Growth Stat:</span>
-            <input type="number" min="0" max="31" value="0" id="growthStat">
+          <label for="environmentalEnhancementUnit">
+            <span class="label-body">Environmental Enhancement Units (Max 2):</span>
+            <input type="number" min="0" max="0" value="0" id="environmentalEnhancementUnit">
           </label>
-          <label for="gainStat">
-            <span class="label-body">Gain Stat:</span>
-            <input type="number" min="0" max="31" value="0" id="gainStat">
+          <label for="growthAccelerationUnit">
+            <span class="label-body">Growth Acceleration Units (No Max besides what your IF tier allows):</span>
+            <input type="number" min="0" max="0" value="0" id="growthAccelerationUnit">
           </label>
           </div>
           <div class="calculationResultDiv">
@@ -119,6 +119,36 @@
               </tbody>
             </table>
           </div>
+
+          <div class="calculationResultDiv">
+            <h5>IF Drop Calculations:</h5>
+            <span>Average drops per cycle:</span>
+            <table>
+              <thead>
+                <tr>
+                  <th>Drop:</th>
+                  <th>Drop Quantity:</th>
+                </tr>
+              </thead>
+              <tbody id="IFdropPerHarvestList">
+
+              </tbody>
+            </table>
+
+            <span>Average drops per hour:</span>
+            <table>
+              <thead>
+                <tr>
+                  <th>Drop:</th>
+                  <th>Drop Quantity:</th>
+                </tr>
+              </thead>
+              <tbody id="IFdropPerHourList">
+
+              </tbody>
+            </table>
+          </div>
+
           <div>
             <p><b>Instructions:</b> Select the crop and biome you want to calculate average drops for. If you do not have a biome in mind, the right-hand list will automatically update when you select a crop that you want to grow.</p>
             <p>Once you have your crop and biome, select the environmental attibutes that your crops will be in as well as the Growth and Gain stats. If you are using the Industrial Farm, please note that the Sky and Hydrated boxes should be checked as the IF handles that even without fertilizer.</p>

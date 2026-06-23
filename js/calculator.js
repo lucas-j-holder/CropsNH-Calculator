@@ -8,7 +8,7 @@ function initCalculator() {
     gainStatField.addEventListener('change', calculateCrop) 
 }
 
-function findGoodBiomes(crop) {
+function findGoodBiomes(crop, guaranteedMatches = 0) {
     goodBiomesListTableBody = document.getElementById("goodBiomesList")
     
     let idealBiomes = []
@@ -148,11 +148,22 @@ function updateDropTables(crop, biome) {
     // console.log(`${totalNutrients} - ${nutrientSupply} - ${nutrientDemand} - ${growthSpeedMultiplier} - ${canBecomeSick}`)    
 }
 
+function calculateIFCrops(crop, biome) {
+    
+}
+
+
+
+
+
 function calculateCrop() {
     let crop = cropDropdown.children[cropDropdown.selectedIndex].id
     let biome = biomeDropdown.children[biomeDropdown.selectedIndex].id
-    
     updateDropTables(crop, biome)
+
+    if(machineDropdown.children[machineDropdown.selectedIndex].id != "None") {
+        calculateIFCrops()
+    }
 }
 
 initCalculator()

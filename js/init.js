@@ -11,6 +11,15 @@ const dropPerHourList = document.getElementById("dropPerHourList")
 
 const fullCropGrowths = document.getElementById("fullCropGrowths")
 
+const machineDropdown = document.getElementById("machineDropdown")
+const overclockDropdown = document.getElementById("overclockDropdown")
+const growthAccelerationUnitCheckbox = document.getElementById("growthAccelerationUnit")
+const overclockedGrowthAccelerationUnitCheckbox = document.getElementById("overclockedGrowthAccelerationUnit")
+const fertilizationUnitCheckbox = document.getElementById("fertilizationUnit")
+//Checking the source of CropsNH (MTEIndustrialFarm.java), Environmental Enhancement Units allow for a module to be inserted to add a biome tag when nutrients is checked. I will treat this like a guaranteed biome tag match.
+const environmentalEnhancementUnitField = document.getElementById("environmentalEnhancementUnit")
+const growthAccelerationUnitField = document.getElementById("growthAccelerationUnit")
+
 function updateCropDropdown() {
     for (const [crop, data] of Object.entries(crops)) {
         const cropListing = document.createElement("option")
@@ -35,6 +44,26 @@ function updateBiomeDropdown() {
     }
 }
 
+function updateIFDropdown() {
+    for ([tier, data] of Object.entries(industrialFarmStats)) {
+        const tierListing = document.createElement("option")
+        tierListing.text = tier
+        tierListing.id = tier
+        machineDropdown.append(tierListing)
+    }
+}
+
+function updateOCDropdown() {
+    for ([tier, data] of Object.entries(industrialFarmStats)) {
+        if(tier == "None"){continue}
+        if(tier == "MV"){continue}
+        const tierListing = document.createElement("option")
+        tierListing.text = tier
+        tierListing.id = tier
+        overclockDropdown.append(tierListing)
+    }
+}
+
 function readCropDropdownChange(event) {
     let indexSelected = event.target.selectedIndex
     let crop = event.target.children[indexSelected]
@@ -47,3 +76,5 @@ function readBiomeDropdownChange(event) {
 
 updateCropDropdown()
 updateBiomeDropdown()
+updateIFDropdown()
+updateOCDropdown()
