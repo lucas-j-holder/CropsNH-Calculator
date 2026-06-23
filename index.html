@@ -5,17 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <title>HTML 5 Boilerplate</title>
+    <title>CropsNH Crop Drop Calculator</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>    
     <div class="container">
-      <h1>CropsNH Crop Calculator</h1>
+      <h1>CropsNH Crop Drop Calculator</h1>
       <div class="row">
         <div class="one-half column">
           <div class="inputFieldDiv">
+            <h5>Crop and Environmental Settings:</h5>
+            <label for="cropDropdown">
+            <span class="label-body">Crop:</span>
+            <select id="cropDropdown"></select>
+          </label>
+          
+
+          <label for="biomeDropdown">
+            <span class="label-body">Biome:</span>
+            <select id="biomeDropdown"></select>
+          </label>
+          
+          <label for="hydrated">
+            <input type="checkbox" id="hydrated">
+            <span class="label-body"> Crops constantly hydrated? </span>
+          </label>
+          
+          <label for="fertilized">
+            <input type="checkbox" id="fertilized">
+            <span class="label-body"> Crops constantly fertilized? </span>
+          </label>
+
+          <label for="canSeeSky">
+            <input type="checkbox" id="canSeeSky">
+            <span class="label-body"> Crops able to see the sky? </span>
+          </label>
+
+
+          <label for="growthStat">
+            <span class="label-body">Growth Stat:</span>
+            <input type="number" min="0" max="31" value="0" id="growthStat">
+          </label>
+          <label for="gainStat">
+            <span class="label-body">Gain Stat:</span>
+            <input type="number" min="0" max="31" value="0" id="gainStat">
+          </label>
+          </div>
+          <div class="inputFieldDiv">
+            <h5>Industrial Farm Settings:</h5>
             <label for="cropDropdown">
             <span class="label-body">Crop:</span>
             <select id="cropDropdown"></select>
@@ -53,6 +92,7 @@
           </label>
           </div>
           <div class="calculationResultDiv">
+            <h5>Drop Calculations:</h5>
             <span>Average drops per harvest:</span>
             <table>
               <thead>
@@ -79,11 +119,15 @@
               </tbody>
             </table>
           </div>
+          <div>
+            <p><b>Instructions:</b> Select the crop and biome you want to calculate average drops for. If you do not have a biome in mind, the right-hand list will automatically update when you select a crop that you want to grow.</p>
+            <p>Once you have your crop and biome, select the environmental attibutes that your crops will be in as well as the Growth and Gain stats. If you are using the Industrial Farm, please note that the Sky and Hydrated boxes should be checked as the IF handles that even without fertilizer.</p>
+          </div>
         </div>
 
         <div class="one-half column">
         <div id="goodBiomes" class="calculationResultDiv">
-          <b>Crop preferred biomes:</b>
+          <h5>Crop preferred biomes:</h5>
           <table>
             <thead>
               <tr>
