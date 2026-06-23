@@ -71,7 +71,6 @@ function cropChanged() {
 
 function calculateGrowthPerCycle(growthSpeedMultiplier, growthStat, crop) {
     let baseSpeed = 6 + growthStat
-    console.log(Math.trunc(baseSpeed * growthSpeedMultiplier))
     return Math.trunc(baseSpeed * growthSpeedMultiplier) // Java truncates when converting from a float to an int. Explicitly truncated here just in case.
 }
 
@@ -80,9 +79,33 @@ function calculateFullGrowthsPerHour(growthSpeedMultiplier, growthStat, crop) {
     let growthPointsPerGrowth = crops[crop].growthPoints
     let cyclesPerGrowth = Math.ceil(growthPointsPerGrowth / growthPerCycle)
     let cyclesPerHour = 72000 / 256
-    console.log(cyclesPerHour)
     let growthsPerHour = cyclesPerHour / cyclesPerGrowth // Leaving as a float since carryover progress is possible.
     return growthsPerHour
+}
+
+function calculateDropsPerHarvest(gainStat, crop) {
+    let dropRounds = crops[crop].dropMult * Math.pow(1.03, gainStat) // sic, dropMult should be dropRate or something like that. I did not know how this value interacted until now.
+    let droppedItems = []
+    // console.log(crops[crop].outputs)
+    for (output of crops[crop].outputs) {
+        averageSuccessfulDropRolls = dropRounds * output.outputChance / 100
+        averageGainBonus = averageSuccessfulDropRolls * (gainStat / 100)
+        averageDropQuantity = (averageSuccessfulDropRolls * output.quantity) + averageGainBonus // Taken/converted from TileEntityCropSticks.java
+        droppedItems.push([averageDropQuantity, output.outputName])
+        // console.log(`[${output.quantity}, ${output.outputName}, ${output.outputChance} - ${dropRounds}]`)
+        console.log(`[${averageSuccessfulDropRolls}, ${averageGainBonus}, ${averageDropQuantity}, ${(gainStat / 100)}]`)
+    }
+    return droppedItems
+}
+
+function calculateDropsPerHour(gainStat, growthStat, crop, growthSpeedMultiplier) {
+    growthCount = calculateFullGrowthsPerHour(growthSpeedMultiplier, growthStat, crop)
+    let drops = calculateDropsPerHarvest(gainStat, crop)
+    fullHourDrops = []
+    for ([quantity, dropName] of drops) {
+        fullHourDrops.push([quantity*growthCount, dropName])
+    }
+    return fullHourDrops
 }
 
 function calculateCrop() {
@@ -100,12 +123,13 @@ function calculateCrop() {
 
     let canBecomeSick = (nutrientDemand - nutrientSupply > 25)
     let growthStat = parseInt(growthStatField.value)
-    let gainStat = parseInt(growthStatField.value)
-    let resistanceStat = parseInt(growthStatField.value)
+    let gainStat = parseInt(gainStatField.value)
+    let resistanceStat = parseInt(resistanceStatField.value)
 
     let growthSpeed = calculateGrowthPerCycle(growthSpeedMultiplier, growthStat, crop)
-    console.log(calculateFullGrowthsPerHour(growthSpeedMultiplier, growthStat, crop))
-
+    console.log(calculateDropsPerHour(gainStat, growthStat, crop, growthSpeedMultiplier))
+    
+    console.log(calculateDropsPerHarvest(gainStat, crop))
     console.log(`${totalNutrients} - ${nutrientSupply} - ${nutrientDemand} - ${growthSpeedMultiplier} - ${canBecomeSick}`)    
 }
 
