@@ -6,9 +6,11 @@ function initCalculator() {
     skyCheckbox.addEventListener('change', calculateCrop)
     growthStatField.addEventListener('change', calculateCrop) 
     gainStatField.addEventListener('change', calculateCrop) 
+    growthAccelerationUnitCheckbox.addEventListener('change', GAUChanged)
+    overclockedGrowthAccelerationUnitCheckbox.addEventListener('change', OGAUChecked)
 }
 
-function findGoodBiomes(crop, guaranteedMatches = 0) {
+function findGoodBiomes(crop) {
     goodBiomesListTableBody = document.getElementById("goodBiomesList")
     
     let idealBiomes = []
@@ -32,7 +34,7 @@ function findGoodBiomes(crop, guaranteedMatches = 0) {
     }
 }
 
-function calculateBiomeNutrients(biome, crop) {
+function calculateBiomeNutrients(biome, crop, guaranteedMatches = 0) {
     cropBiomePreferences = crops[crop]["biomePreferences"]
     matchingTags = 0
         for (tag of cropBiomePreferences) {
@@ -148,8 +150,28 @@ function updateDropTables(crop, biome) {
     // console.log(`${totalNutrients} - ${nutrientSupply} - ${nutrientDemand} - ${growthSpeedMultiplier} - ${canBecomeSick}`)    
 }
 
+function GAUChanged() {
+    if (parseInt(growthAccelerationUnitField.value) > 0) {
+        overclockedGrowthAccelerationUnitCheckbox.disabled = true
+    } else {
+        overclockedGrowthAccelerationUnitCheckbox.disabled = false
+    }
+    calculateCrop()
+}
+
+function OGAUChecked() {
+    if (overclockedGrowthAccelerationUnitCheckbox.checked) {
+        growthAccelerationUnitCheckbox.disabled = true
+    } else {
+        growthAccelerationUnitCheckbox.disabled = false
+    }
+    calculateCrop()
+}
+
 function calculateIFCrops(crop, biome) {
-    
+    let environmentEnhancements = parseInt(environmentalEnhancementUnitField.value)
+    let biomeBonus = calculateBiomeNutrients(biome, crop, environmentEnhancements)
+    console.log(biomeBonus)
 }
 
 
@@ -162,7 +184,7 @@ function calculateCrop() {
     updateDropTables(crop, biome)
 
     if(machineDropdown.children[machineDropdown.selectedIndex].id != "None") {
-        calculateIFCrops()
+        calculateIFCrops(crop, biome)
     }
 }
 
